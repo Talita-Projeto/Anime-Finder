@@ -1,22 +1,3 @@
-/*
- * AnimeFinder - Catalogo e recomendacao de animes
- * Projeto academico em C
- *
- * Funcionalidades:
- * - Listar o catalogo
- * - Recomendar por genero e idade
- * - Buscar anime pelo titulo (busca parcial, sem diferenciar maiusculas)
- * - Listar generos disponiveis
- *
- * Compilacao (GCC):
- *   gcc -std=c11 -Wall -Wextra -pedantic main.c -o animefinder
- *
- * Windows:
- *   animefinder.exe
- *
- * Linux/macOS:
- *   ./animefinder
- */
 
 #include <stdio.h>
 #include <string.h>
