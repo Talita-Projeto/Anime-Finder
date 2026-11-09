@@ -17,20 +17,20 @@ typedef struct {
 /* Catalogo inicial: dados ilustrativos para o projeto. */
 Anime catalogo[TOTAL_ANIMES] = {
     {"Naruto", "Aventura", 12, 220},
-    {"One Piece", "Aventura", 12, 1100},
+    {"Nisekoi", "Romance", 14, 32},
     {"Death Note", "Suspense", 16, 37},
     {"Spy x Family", "Comedia", 12, 37},
-    {"Your Name", "Romance", 10, 1},
+    {"The Quintessential Quintuplets", "Romance", 14, 29},
     {"Attack on Titan", "Acao", 16, 87},
-    {"Demon Slayer", "Acao", 16, 63},
-    {"Haikyuu", "Esporte", 10, 85},
+    {"JoJo's Bizarre Adventure", "Acao", 18, 190},
+    {"Umamusume Cinderella Gray", "Esporte", 10, 85},
     {"Frieren", "Fantasia", 12, 28},
-    {"K-On", "Comedia", 10, 39},
+    {"Machikado Mazoku", "Comedia", 10, 24},
     {"Fullmetal Alchemist: Brotherhood", "Aventura", 14, 64},
     {"Violet Evergarden", "Drama", 12, 13},
     {"Mob Psycho 100", "Acao", 12, 37},
-    {"Dr. Stone", "Aventura", 12, 57},
-    {"A Silent Voice", "Drama", 12, 1}
+    {"Monster", "Suspense", 16, 57},
+    {"Steins;Gate", "Drama", 14, 25}
 };
 
 /* Le uma linha inteira e remove o caractere de quebra de linha. */
