@@ -44,16 +44,16 @@ void lerTexto(const char *mensagem, char texto[], size_t tamanho) {
 
     texto[strcspn(texto, "\n")] = '\0';
 
-    /* Descarta o restante caso a entrada seja maior que o vetor. */
+ 
     if (strchr(texto, '\0') != NULL && strlen(texto) == tamanho - 1) {
         int caractere;
         while ((caractere = getchar()) != '\n' && caractere != EOF) {
-            /* descarta */
+       
         }
     }
 }
 
-/* Le um numero inteiro e valida a entrada. */
+
 int lerInteiro(const char *mensagem, int minimo, int maximo) {
     char entrada[40];
     char *fim;
@@ -78,7 +78,7 @@ int lerInteiro(const char *mensagem, int minimo, int maximo) {
     }
 }
 
-/* Compara textos ignorando diferencas entre maiusculas e minusculas. */
+
 int compararSemDiferenciarMaiusculas(const char *a, const char *b) {
     while (*a != '\0' && *b != '\0') {
         int caractereA = tolower((unsigned char)*a);
@@ -95,7 +95,7 @@ int compararSemDiferenciarMaiusculas(const char *a, const char *b) {
     return tolower((unsigned char)*a) - tolower((unsigned char)*b);
 }
 
-/* Verifica se um texto aparece dentro de outro, sem diferenciar caixa. */
+
 int contemTexto(const char *texto, const char *termo) {
     size_t tamanhoTexto = strlen(texto);
     size_t tamanhoTermo = strlen(termo);
@@ -125,7 +125,7 @@ int contemTexto(const char *texto, const char *termo) {
     return 0;
 }
 
-/* Exibe os dados de um anime. */
+
 void exibirAnime(const Anime *anime) {
     printf("\nTitulo: %s\n", anime->titulo);
     printf("Genero: %s\n", anime->genero);
@@ -134,7 +134,7 @@ void exibirAnime(const Anime *anime) {
     printf("----------------------------------------\n");
 }
 
-/* Lista todos os animes cadastrados. */
+
 void listarAnimes(void) {
     printf("\n========== CATALOGO DE ANIMES ==========\n");
 
@@ -145,7 +145,7 @@ void listarAnimes(void) {
     printf("Total de animes: %d\n", TOTAL_ANIMES);
 }
 
-/* Mostra os generos cadastrados, sem repetir. */
+
 void listarGeneros(void) {
     char generos[TOTAL_ANIMES][30];
     int totalGeneros = 0;
@@ -174,7 +174,7 @@ void listarGeneros(void) {
     }
 }
 
-/* Recomenda animes conforme genero e idade informados. */
+
 void recomendarAnimes(void) {
     char generoEscolhido[30];
     int idade;
@@ -211,7 +211,7 @@ void recomendarAnimes(void) {
            "consulte a classificacao oficial da obra.\n");
 }
 
-/* Busca animes por parte do titulo. */
+
 void buscarAnime(void) {
     char termo[MAX_TEXTO];
     int encontrados = 0;
@@ -238,7 +238,7 @@ void buscarAnime(void) {
     }
 }
 
-/* Exibe o menu principal. */
+
 void exibirMenu(void) {
     printf("\n========================================\n");
     printf("              ANIMEFINDER\n");
@@ -281,7 +281,7 @@ int main(void) {
                 break;
 
             default:
-                /* A validacao de lerInteiro impede chegar aqui. */
+               
                 printf("\nOpcao invalida.\n");
         }
 
