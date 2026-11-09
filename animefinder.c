@@ -14,7 +14,7 @@ typedef struct {
     int episodios;
 } Anime;
 
-/* Catalogo inicial: dados ilustrativos para o projeto. */
+
 Anime catalogo[TOTAL_ANIMES] = {
     {"Naruto", "Aventura", 12, 220},
     {"Nisekoi", "Romance", 14, 32},
@@ -33,7 +33,7 @@ Anime catalogo[TOTAL_ANIMES] = {
     {"Steins;Gate", "Drama", 14, 25}
 };
 
-/* Le uma linha inteira e remove o caractere de quebra de linha. */
+
 void lerTexto(const char *mensagem, char texto[], size_t tamanho) {
     printf("%s", mensagem);
 
