@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Anime · AnimeFinder</title>
+  <meta name="description" content="Detalhes do anime no AnimeFinder: sinopse, gênero, classificação indicativa e episódios.">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="wrap">
+
+    <header>
+      <h1>Anime<span>Finder</span></h1>
+      <p class="sub">Catálogo e recomendação de animes</p>
+    </header>
+
+    <nav aria-label="Principal">
+      <a href="index.html#catalogo">Catálogo</a>
+      <a href="index.html#buscar">Buscar</a>
+      <a href="index.html#generos">Gêneros</a>
+    </nav>
+
+    <main>
+      <a class="voltar" href="index.html#catalogo">← Voltar ao catálogo</a>
+      <p class="info" id="status" aria-live="polite">Carregando…</p>
+      <article class="detalhe" id="detalhe" hidden></article>
+    </main>
+
+    <footer>AnimeFinder · projeto acadêmico</footer>
+  </div>
+
+  <script src="anime.js"></script>
+</body>
+
+</html>
